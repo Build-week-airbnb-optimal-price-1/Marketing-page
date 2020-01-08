@@ -1,44 +1,35 @@
 // Navigation Styles here
-
-.nav-layout(@justify, @align) {
+nav{
     display: flex;
-    justify-content: @justify;
-    align-items: @align;
-}
-
-.nav-layout-mobile(@justify, @align) {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: @justify;
-    align-items: @align;
-}
-
-.navi {
-    border-bottom: 2px dashed @navigation-border;
-
-    nav {
-        width: 75%;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        .nav-layout(space-between, center);
-        
-        .nav-links {
-            a {
-                color: black;
-                padding: 10px 20px;
-
-                &:last-of-type {
-                    padding-right: 0;
-                }
-            }
+    justify-content:space-between;
+    background-color: @nav-background;
+    .nav-mod-left{
+      img{
+            height:60px;
+        }
+       
+    }
+    .nav-mod-right{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10%;
+        a{
+            color:black;
+            font-size: 20px;
+           margin:10px 35px;
+           padding-top:5px;
+            
+        }
+        .login-link{
+            background-color: black;
+            color:white;
+            padding: 5px 50px 0 10px;
         }
     }
     @media @mobile {
 
         
         nav {
-            .nav-layout-mobile(center, center);
             width: 100%;
             padding-right: 1%;
             padding-left: 1%;    
