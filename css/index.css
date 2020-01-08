@@ -156,7 +156,6 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
   padding-bottom: 10px;
 }
 img {
@@ -224,12 +223,34 @@ nav .nav-mod-right .login-link {
 }
 header {
   width: 80%;
-  margin: 0 auto 30px;
+  margin: 20px auto;
   padding-bottom: 30px;
   border-bottom: 2px dashed #FFF;
+  display: flex;
+  justify-content: space-around;
 }
-header img {
-  padding-bottom: 30px;
+header .header-left {
+  width: 30%;
+}
+header .header-left h1 {
+  width: 80%;
+  border: 1px solid black;
+  padding: 30px;
+}
+header .header-right {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+header .header-right img {
+  width: 100%;
+  height: 100%;
+}
+header .header-right p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 @media (max-width: 500px) {
   header {
@@ -240,4 +261,35 @@ header img {
 main {
   width: 80%;
   margin: 0 auto;
+}
+main .grid {
+  width: 80%;
+  margin: 0 auto;
+}
+main .grid-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .grid-set .grid-block {
+  background-color: black;
+  margin: 15px 20px;
+  width: 200px;
+  height: 160px;
+}
+main .grid-cta {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+main .learn-more {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+main .learn-more .learn-more-set {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
