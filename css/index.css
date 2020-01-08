@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Laro', serif;
 }
 h1 {
   font-size: 4rem;
@@ -211,11 +211,15 @@ nav .nav-mod-right .login-link {
     text-align: center;
   }
 }
-.footer {
+footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 1px solid #FFF;
+  background-color: #06164D;
 }
-.footer p {
+footer .footer-wrapper {
+  width: 80%;
+}
+footer p {
   text-align: center;
   color: #FFF;
   font-size: 1.6rem;
