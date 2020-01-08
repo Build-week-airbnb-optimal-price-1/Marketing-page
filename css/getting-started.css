@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lora', serif;
+  font-family: serif;
 }
 h1 {
   font-size: 4rem;
@@ -214,7 +214,11 @@ nav .nav-mod-right .login-link {
 }
 footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 1px solid #FFF;
+  background-color: #06164D;
+}
+footer .footer-wrapper {
+  width: 80%;
 }
 footer p {
   text-align: center;
@@ -222,16 +226,18 @@ footer p {
   font-size: 1.6rem;
   padding: 20px;
 }
-header {
+.wrapper {
   width: 80%;
+}
+.wrapper header {
   margin: 0 auto 30px;
   padding-bottom: 30px;
 }
-header img {
+.wrapper header img {
   padding-bottom: 30px;
 }
 @media (max-width: 500px) {
-  header {
+  .wrapper header {
     width: 90%;
     padding-bottom: 5vw;
   }
