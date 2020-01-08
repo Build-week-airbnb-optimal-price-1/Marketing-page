@@ -1,0 +1,57 @@
+// Navigation Styles here
+
+.nav-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.nav-layout-mobile(@justify, @align) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navi {
+    border-bottom: 2px dashed @navigation-border;
+
+    nav {
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .nav-layout(space-between, center);
+        
+        .nav-links {
+            a {
+                color: black;
+                padding: 10px 20px;
+
+                &:last-of-type {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    @media @mobile {
+
+        
+        nav {
+            .nav-layout-mobile(center, center);
+            width: 100%;
+            padding-right: 1%;
+            padding-left: 1%;    
+        }
+
+        h1 {
+            padding-bottom: 2%;
+        }
+
+        .nav-links {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
