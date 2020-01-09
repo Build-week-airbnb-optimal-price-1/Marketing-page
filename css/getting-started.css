@@ -198,18 +198,19 @@ nav .nav-mod-right .login-link {
 }
 @media (max-width: 500px) {
   nav {
-    margin-right: 2px;
+    width: 100%;
   }
   nav .nav-mod-left {
     display: none;
   }
   nav .nav-mod-right a {
-    width: 100%;
+    margin: 0 20px;
+    width: 80%;
     font-size: 15px;
   }
   nav .login-link {
-    padding: 0;
-    margin-right: 0;
+    background-color: none;
+    padding: 10px;
   }
 }
 footer {
@@ -271,13 +272,16 @@ footer .footer-wrapper p {
 .wrapper main .gs-teaser-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .wrapper main .gs-teaser-section .teaser-text {
   width: 45%;
 }
+.wrapper main .gs-teaser-section .teaser-text h2 {
+  padding-bottom: 5vh;
+}
 .wrapper main .gs-teaser-section .teaser-img {
-  width: 30%;
+  width: 50%;
 }
 .wrapper main .gs-teaser-section .teaser-img img {
   max-width: 100%;
