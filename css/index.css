@@ -207,18 +207,19 @@ nav .nav-mod-right .login-link {
 }
 @media (max-width: 500px) {
   nav {
-    margin-right: 2px;
+    width: 100%;
   }
   nav .nav-mod-left {
     display: none;
   }
   nav .nav-mod-right a {
-    width: 100%;
+    margin: 0 20px;
+    width: 80%;
     font-size: 15px;
   }
   nav .login-link {
-    padding: 0;
-    margin-right: 0;
+    background-color: none;
+    padding: 10px;
   }
 }
 footer {
@@ -236,9 +237,6 @@ footer .footer-wrapper p {
   color: #FFF;
   font-size: 1.6rem;
   padding: 20px;
-}
-.wrapper {
-  width: 495px;
 }
 header {
   width: 70%;
@@ -278,7 +276,7 @@ header .header-right p {
 }
 @media (max-width: 500px) {
   header {
-    width: 90%;
+    width: 100%;
   }
   header .header-left {
     width: 90%;
@@ -377,7 +375,7 @@ main .host-stats .stats p {
 }
 @media (max-width: 500px) {
   main {
-    width: 90%;
+    width: 100%;
   }
   main .grid-group {
     display: none;
