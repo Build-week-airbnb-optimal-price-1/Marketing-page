@@ -214,21 +214,21 @@ nav .nav-mod-right .login-link {
 footer {
   width: 100%;
   border-top: 1px solid #FFF;
-  background-color: #06164D;
+  background-color: #1a1a1a;
+  color: #FFF;
 }
 footer .footer-wrapper {
   width: 80%;
+  margin: 0 auto;
 }
-footer p {
+footer .footer-wrapper p {
   text-align: center;
   color: #FFF;
   font-size: 1.6rem;
   padding: 20px;
 }
-.wrapper {
-  width: 80%;
-}
 .wrapper header {
+  width: 80%;
   margin: 0 auto 30px;
   padding-bottom: 30px;
 }
@@ -240,4 +240,15 @@ footer p {
     width: 90%;
     padding-bottom: 5vw;
   }
+}
+.wrapper main {
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper main .gs-steps .steps-to-start-container {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+.wrapper main .gs-steps .steps-to-start-container .circle-step {
+  width: 25%;
 }
