@@ -229,7 +229,7 @@ header {
   width: 70%;
   margin: 20px auto;
   padding: 30px 0;
-  background-color: lightgrey;
+  background-color: #ebe6e6;
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
@@ -276,15 +276,15 @@ main .grid-set {
   flex-wrap: wrap;
 }
 main .grid-set .grid-block {
-  background-color: black;
+  background-color: #ebe6e6;
   margin: 15px 20px;
   width: 200px;
   height: 160px;
 }
 main .grid-cta {
   width: 90%;
-  background-color: black;
-  color: white;
+  background-color: #ebe6e6;
+  border: 1px solid black;
   font-size: 30px;
   text-align: center;
 }
@@ -292,7 +292,7 @@ main .learn-more {
   width: 100%;
   margin: 40px auto;
   text-align: center;
-  background-color: lightgrey;
+  background-color: #ebe6e6;
   border: 1px solid black;
 }
 main .learn-more .learn-more-set {
@@ -321,7 +321,7 @@ main .host-stats {
   display: flex;
   margin: 25px auto;
   flex-wrap: wrap;
-  background-color: lightgrey;
+  background-color: #ebe6e6;
   border: 1px solid black;
 }
 main .host-stats h2 {
