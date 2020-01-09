@@ -158,15 +158,6 @@ p {
   line-height: 1.5;
   padding-bottom: 10px;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 a {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -228,16 +219,31 @@ footer .footer-wrapper p {
   padding: 20px;
 }
 .wrapper header {
-  width: 80%;
-  margin: 0 auto 30px;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 70vh;
+  width: 90%;
+  background-image: url('https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.wrapper header img {
-  padding-bottom: 30px;
+.wrapper header span {
+  text-transform: uppercase;
+}
+.wrapper header h1 {
+  margin-bottom: 3vh;
+}
+.wrapper header .header-text {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .wrapper header {
-    width: 90%;
+    width: 100%;
     padding-bottom: 5vw;
   }
 }
@@ -245,10 +251,61 @@ footer .footer-wrapper p {
   width: 80%;
   margin: 0 auto;
 }
-.wrapper main .gs-steps .steps-to-start-container {
-  display: flexbox;
+.wrapper main section {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.wrapper main section:last-of-type {
+  margin-bottom: 5vh;
+}
+.wrapper main .gs-teaser-section {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+.wrapper main .gs-teaser-section .teaser-text {
+  width: 45%;
+}
+.wrapper main .gs-teaser-section .teaser-img {
+  width: 30%;
+}
+.wrapper main .gs-teaser-section .teaser-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wrapper main .gs-steps .steps-to-start-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .wrapper main .gs-steps .steps-to-start-container .circle-step {
-  width: 25%;
+  width: 28%;
+}
+.wrapper main .gs-user-quote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.wrapper main .gs-user-quote .quote-img {
+  width: 40%;
+}
+.wrapper main .gs-user-quote .quote-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wrapper main .gs-user-quote .quote-content {
+  width: 40%;
+}
+.wrapper main .gs-faq-section .faq-header {
+  margin-bottom: 3vh;
+}
+.wrapper main .gs-faq-section .faq-questions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper main .gs-faq-section .faq-questions-list .question {
+  width: 48%;
+  border-bottom: 1px solid silver;
+  margin-bottom: 3vh;
 }
