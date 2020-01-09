@@ -53,7 +53,7 @@
         .gs-teaser-section {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
 
             .teaser-text {
                 width: 45%;
@@ -64,7 +64,7 @@
             }
 
             .teaser-img {
-                width: 50%;
+                width: 45%;
 
                 img {
                     max-width: 100%;
@@ -72,6 +72,22 @@
                 }
             }
 
+            @media @mobile {
+                .teaser-img {
+                    width: 100%;
+
+                }
+                .teaser-text {
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 80%;
+                    margin-bottom: 5vh;
+
+                    h2 {
+                        padding-bottom: 5%;
+                    }
+                }
+            }
         } // teaser section
 
         .gs-steps {
@@ -84,6 +100,22 @@
                 .circle-step {
                     width: 28%;
 
+                    .number {
+                        height: 4rem;
+                        width: 4rem;
+                        background-color: @deep-blue;
+                        color: @white;
+                        line-height: 400%;
+                        text-align: center;
+                        border-radius: 100%;
+                        margin-bottom: 5%;
+                    }
+
+                    @media @mobile {
+                        width: 100%;
+                        margin-bottom: 5%;
+                    }
+                }
             }
 
         } // steps section
@@ -106,6 +138,15 @@
                 width: 40%;
             }
 
+            @media @mobile {
+                .quote-img {
+                    width: 80%;
+                    margin-bottom: 5%;
+                }
+                .quote-content {
+                    width: 80%;
+                }
+            }
         } // quote section
 
         .gs-faq-section {
@@ -123,6 +164,10 @@
                     width: 48%;
                     border-bottom: 1px solid silver;
                     margin-bottom: 3vh;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
                 }
             }
         } // faq section
