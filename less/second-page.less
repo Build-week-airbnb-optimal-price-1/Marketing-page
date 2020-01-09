@@ -27,7 +27,10 @@
             margin: 0 auto;
         }
 
-      
+        p {
+            margin-bottom: 5vh;
+        }
+
         @media  @mobile {
           width: 100%;
           padding-bottom: 5vw;
@@ -50,14 +53,18 @@
         .gs-teaser-section {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
 
             .teaser-text {
                 width: 45%;
+
+                h2 {
+                    padding-bottom: 5vh;
+                }
             }
 
             .teaser-img {
-                width: 30%;
+                width: 50%;
 
                 img {
                     max-width: 100%;
@@ -76,7 +83,7 @@
 
                 .circle-step {
                     width: 28%;
-                }
+
             }
 
         } // steps section
