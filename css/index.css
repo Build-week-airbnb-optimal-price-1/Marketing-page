@@ -192,23 +192,33 @@ nav .nav-mod-right a {
   margin: 10px 35px;
   padding-top: 5px;
 }
+nav .nav-mod-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+nav .nav-mod-right a:active {
+  background-color: #4CAF50;
+  color: white;
+}
 nav .nav-mod-right .login-link {
   background-color: black;
   color: white;
   padding: 5px 50px 0 10px;
 }
 @media (max-width: 500px) {
-  nav nav {
-    width: 100%;
-    padding-right: 1%;
-    padding-left: 1%;
+  nav {
+    margin-right: 2px;
   }
-  nav h1 {
-    padding-bottom: 2%;
+  nav .nav-mod-left {
+    display: none;
   }
-  nav .nav-links {
+  nav .nav-mod-right a {
     width: 100%;
-    text-align: center;
+    font-size: 15px;
+  }
+  nav .login-link {
+    padding: 0;
+    margin-right: 0;
   }
 }
 footer {
@@ -227,6 +237,9 @@ footer .footer-wrapper p {
   font-size: 1.6rem;
   padding: 20px;
 }
+.wrapper {
+  width: 495px;
+}
 header {
   width: 70%;
   margin: 20px auto;
@@ -243,6 +256,10 @@ header .header-left h1 {
   width: 80%;
   border: 1px solid black;
   padding: 30px;
+}
+header .header-left p {
+  margin: 10px 0;
+  font-size: 20px;
 }
 header .header-right {
   width: 50%;
@@ -262,7 +279,22 @@ header .header-right p {
 @media (max-width: 500px) {
   header {
     width: 90%;
-    padding-bottom: 5vw;
+  }
+  header .header-left {
+    width: 90%;
+  }
+  header .header-left h1 {
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid black;
+    padding: 30px;
+  }
+  header .header-left p {
+    margin: 10px auto;
+    font-size: 15px;
+  }
+  header .header-right {
+    display: none;
   }
 }
 main {
@@ -342,4 +374,28 @@ main .host-stats .stats h3 {
 }
 main .host-stats .stats p {
   font-size: 18px;
+}
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+  }
+  main .grid-group {
+    display: none;
+  }
+  main .learn-more .learn-more-set {
+    flex-direction: column;
+  }
+  main .user-quote img {
+    display: none;
+  }
+  main .host-stats .stats {
+    flex-direction: column;
+    align-content: center;
+  }
+  main .host-stats .stats h3 {
+    font-size: 10px;
+  }
+  main .host-stats .stats p {
+    font-size: 18px;
+  }
 }

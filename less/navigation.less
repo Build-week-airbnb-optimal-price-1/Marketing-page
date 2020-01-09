@@ -18,7 +18,14 @@ nav{
             font-size: 20px;
            margin:10px 35px;
            padding-top:5px;
-            
+           &:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          &:active {
+            background-color: #4CAF50;
+            color: white;
+          }
         }
         .login-link{
             background-color: black;
@@ -27,22 +34,22 @@ nav{
         }
     }
     @media @mobile {
-
-        
-        nav {
-            width: 100%;
-            padding-right: 1%;
-            padding-left: 1%;    
+        margin-right: 2px;
+        .nav-mod-left{
+            display: none;
         }
-
-        h1 {
-            padding-bottom: 2%;
+        .nav-mod-right{
+           a{
+                width: 100%;
+                font-size: 15px;
+           }
+           
         }
-
-        .nav-links {
-            width: 100%;
-            text-align: center;
+        .login-link{
+            padding: 0;
+            margin-right: 0;
         }
+         
     }
 }
 
