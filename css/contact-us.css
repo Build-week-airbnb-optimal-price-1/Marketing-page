@@ -209,13 +209,23 @@ footer .footer-wrapper p {
   font-size: 1.6rem;
   padding: 20px;
 }
-.contact-form form {
-  margin: 20px 20px;
+.wrapper header {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.wrapper main .contact-form {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 25vh;
+}
+.wrapper main .contact-form form {
   /* Style the submit button with a specific background color etc */
 }
-.contact-form form input[type=text],
-.contact-form form select,
-.contact-form form textarea {
+.wrapper main .contact-form form input[type=text],
+.wrapper main .contact-form form select,
+.wrapper main .contact-form form textarea {
   width: 100%;
   padding: 15px;
   border: 1px solid #ccc;
@@ -224,7 +234,41 @@ footer .footer-wrapper p {
   margin: 15px 0px;
   resize: vertical;
 }
-.contact-form form input[type=submit] {
+.wrapper main .contact-form form input[type=submit] {
+  background-color: pink;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 16px;
+}
+header {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+main .contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+main .contact-form form {
+  /* Style the submit button with a specific background color etc */
+}
+main .contact-form form input[type=text],
+main .contact-form form select,
+main .contact-form form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 15px 0px;
+  resize: vertical;
+}
+main .contact-form form input[type=submit] {
   background-color: pink;
   color: white;
   padding: 1em 2em;
