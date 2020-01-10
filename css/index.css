@@ -144,18 +144,27 @@ h5 {
   font-family: 'Laro', serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 50px;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 30px;
   padding-bottom: 10px;
 }
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+h5 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
 p {
   line-height: 1.5;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 a {
@@ -163,6 +172,22 @@ a {
   font-size: 1.6rem;
   padding-bottom: 10px;
   text-decoration: none;
+}
+button {
+  background-color: #ebe6e6;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  /* Green */
+  padding: 5px;
+}
+button:hover {
+  background-color: black ;
+  color: #ebe6e6;
+  border: 2px solid #ebe6e6;
+  border-radius: 8px;
+  /* Green */
+  padding: 5px;
 }
 nav {
   display: flex;
@@ -222,6 +247,7 @@ footer {
 footer .footer-wrapper {
   width: 80%;
   margin: 0 auto;
+  padding: 10px;
 }
 footer .footer-wrapper p {
   text-align: center;
