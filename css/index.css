@@ -267,7 +267,7 @@ header .header-right p {
 }
 @media (max-width: 500px) {
   header {
-    width: 100%;
+    width: 90%;
   }
   header .header-left {
     width: 90%;
@@ -367,13 +367,17 @@ main .host-stats .stats p {
 }
 @media (max-width: 500px) {
   main {
-    width: 100%;
+    width: 90%;
   }
   main .grid-group {
     display: none;
   }
   main .learn-more .learn-more-set {
     flex-direction: column;
+  }
+  main .user-quote {
+    margin-left: 10px;
+    width: 100%;
   }
   main .user-quote img {
     display: none;
