@@ -189,54 +189,8 @@ button:hover {
   /* Green */
   padding: 5px;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #ebe6e6;
-}
-nav .nav-mod-left img {
-  height: 60px;
-}
-nav .nav-mod-right {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10%;
-}
-nav .nav-mod-right a {
-  color: black;
-  font-size: 20px;
-  margin: 10px 35px;
-  padding-top: 5px;
-}
-nav .nav-mod-right a:hover {
-  background-color: #ddd;
-  color: black;
-}
-nav .nav-mod-right a:active {
-  background-color: #4CAF50;
-  color: white;
-}
-nav .nav-mod-right .login-link {
-  background-color: black;
-  color: white;
-  padding: 5px 50px 0 10px;
-}
-@media (max-width: 500px) {
-  nav {
-    width: 100%;
-  }
-  nav .nav-mod-left {
-    display: none;
-  }
-  nav .nav-mod-right a {
-    margin: 0 20px;
-    width: 80%;
-    font-size: 15px;
-  }
-  nav .login-link {
-    background-color: none;
-    padding: 10px;
-  }
+.image-header {
+  height: 53px;
 }
 footer {
   width: 100%;
