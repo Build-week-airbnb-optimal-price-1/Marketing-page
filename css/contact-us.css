@@ -144,14 +144,14 @@ h5 {
   font-family: 'Laro', serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 50px;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 35px;
   padding-bottom: 10px;
 }
 h3 {
-  font-size: 3.2rem;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 h4 {
@@ -164,6 +164,7 @@ h5 {
 }
 p {
   line-height: 1.5;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 a {
@@ -172,54 +173,24 @@ a {
   padding-bottom: 10px;
   text-decoration: none;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
+button {
   background-color: #ebe6e6;
-}
-nav .nav-mod-left img {
-  height: 60px;
-}
-nav .nav-mod-right {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10%;
-}
-nav .nav-mod-right a {
   color: black;
-  font-size: 20px;
-  margin: 10px 35px;
-  padding-top: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+  /* Green */
+  padding: 5px;
 }
-nav .nav-mod-right a:hover {
-  background-color: #ddd;
-  color: black;
+button:hover {
+  background-color: black ;
+  color: #ebe6e6;
+  border: 2px solid #ebe6e6;
+  border-radius: 8px;
+  /* Green */
+  padding: 5px;
 }
-nav .nav-mod-right a:active {
-  background-color: #4CAF50;
-  color: white;
-}
-nav .nav-mod-right .login-link {
-  background-color: black;
-  color: white;
-  padding: 5px 50px 0 10px;
-}
-@media (max-width: 500px) {
-  nav {
-    width: 100%;
-  }
-  nav .nav-mod-left {
-    display: none;
-  }
-  nav .nav-mod-right a {
-    margin: 0 20px;
-    width: 80%;
-    font-size: 15px;
-  }
-  nav .login-link {
-    background-color: none;
-    padding: 10px;
-  }
+.image-header {
+  height: 53px;
 }
 footer {
   width: 100%;
@@ -230,6 +201,7 @@ footer {
 footer .footer-wrapper {
   width: 80%;
   margin: 0 auto;
+  padding: 10px;
 }
 footer .footer-wrapper p {
   text-align: center;

@@ -6,24 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Getting Started</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,700&display=swap" rel="stylesheet">
     <link href="css/getting-started.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <div class="nav-mod-left">
-                <div class="nav-mod brand-image">
-                    <img src="assets/img/temppicture.jfif"> 
-                </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <img class="image-header"src="assets/img/temppicture.jfif">
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="getting-started.html">Getting Started</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="nav-mod-right">
-                <a href="index.html">Home</a>
-                <a href="getting-started.html">Getting Started</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="#" class="login-link">Log In</a>
-            </div>
-        </nav>
+          </nav>
         <header class="gs-header">
             <div class="header-text">
                 <p><span>setup</span></p>
