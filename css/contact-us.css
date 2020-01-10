@@ -174,6 +174,27 @@ a {
   text-decoration: none;
 }
 button {
+<<<<<<< HEAD
+=======
+  background-color: #ebe6e6;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  /* Green */
+  padding: 5px;
+}
+button:hover {
+  background-color: black ;
+  color: #ebe6e6;
+  border: 2px solid #ebe6e6;
+  border-radius: 8px;
+  /* Green */
+  padding: 5px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 7112545d5f3237b1f1ecefcfce7762e61fbcfd6f
   background-color: #ebe6e6;
   color: black;
   border: 2px solid black;

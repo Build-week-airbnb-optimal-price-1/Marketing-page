@@ -210,44 +210,30 @@ footer .footer-wrapper p {
   padding: 20px;
 }
 header {
-  width: 70%;
-  margin: 20px auto;
-  padding: 30px 0;
-  background-color: #ebe6e6;
-  border: 1px solid black;
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 70vh;
+  width: 90%;
+  background-image: url('https://images.unsplash.com/photo-1504416285472-eccf03dd31eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .header-left {
-  width: 30%;
-}
-header .header-left h1 {
-  width: 80%;
-  border: 1px solid black;
-  padding: 30px;
-}
-header .header-left p {
-  margin: 10px 0;
-  font-size: 20px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 header .header-right {
   width: 50%;
-  position: relative;
-  text-align: center;
-  color: black;
-}
-header .header-right img {
-  width: 100%;
-  height: 100%;
-}
-header .header-right p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
 }
 @media (max-width: 500px) {
   header {
-    width: 90%;
+    width: 100%;
   }
   header .header-left {
     width: 90%;
@@ -262,46 +248,52 @@ header .header-right p {
     margin: 10px auto;
     font-size: 15px;
   }
-  header .header-right {
-    display: none;
-  }
 }
 main {
-  width: 70%;
-  margin: 0 auto;
-}
-main .grid {
   width: 80%;
   margin: 0 auto;
 }
-main .grid-set {
+main section {
+  margin-bottom: 10vh;
+}
+main .grid h2 {
+  margin-bottom: 2.5vh;
+}
+main .grid .grid-set {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2.5vh;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-main .grid-set .grid-block {
+main .grid .grid-set .grid-block {
   background-color: #ebe6e6;
-  margin: 15px 20px;
+  margin: 2.5%;
   width: 200px;
-  height: 160px;
+  height: 200px;
 }
-main .grid-cta {
+main .grid .grid-cta {
   width: 90%;
+  margin: 0 auto;
   background-color: #ebe6e6;
   border: 1px solid black;
-  font-size: 30px;
   text-align: center;
+}
+main .grid .grid-cta p {
+  font-weight: 700;
 }
 main .learn-more {
-  width: 100%;
-  margin: 40px auto;
+  margin: 0 auto;
   text-align: center;
-  background-color: #ebe6e6;
-  border: 1px solid black;
+  margin-bottom: 10vh;
+}
+main .learn-more .learn-more-header {
+  margin-bottom: 2.5vh;
 }
 main .learn-more .learn-more-set {
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
 }
 main .user-quote {
   display: flex;
@@ -319,7 +311,6 @@ main .user-quote .qoute-right-side {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 12px;
 }
 main .host-stats {
   display: flex;
@@ -328,22 +319,11 @@ main .host-stats {
   background-color: #ebe6e6;
   border: 1px solid black;
 }
-main .host-stats h2 {
-  width: 100%;
-  text-align: center;
-  font-size: 45px;
-}
 main .host-stats .stats {
   width: 60%;
   margin: 10px auto;
   display: flex;
   justify-content: space-between;
-}
-main .host-stats .stats h3 {
-  font-size: 30px;
-}
-main .host-stats .stats p {
-  font-size: 18px;
 }
 @media (max-width: 500px) {
   main {
@@ -365,11 +345,5 @@ main .host-stats .stats p {
   main .host-stats .stats {
     flex-direction: column;
     align-content: center;
-  }
-  main .host-stats .stats h3 {
-    font-size: 10px;
-  }
-  main .host-stats .stats p {
-    font-size: 18px;
   }
 }
